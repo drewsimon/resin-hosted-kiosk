@@ -13,3 +13,5 @@ RUN apt-get update && apt-get install -y \
 COPY ./config.txt /boot/config.txt
 COPY ./xinitrc /home/pi/.xinitrc
 COPY ./rc.local /etc/rc.local
+
+ENTRYPOINT startx
