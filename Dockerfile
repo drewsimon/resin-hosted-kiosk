@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 COPY ./config.txt /boot/config.txt
+COPY ./rc.local /etc/rc.local
 COPY ./xinitrc /root/.xinitrc
 COPY ./startx.sh /root/startx.sh
 
