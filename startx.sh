@@ -8,6 +8,6 @@ echo $DEFAULT_URL
 URL=${URL:=$DEFAULT_URL}
 echo $URL
 
-sed -i "s|APP_URL|$URL|g" /root/xinitrc
+sed -i "s|APP_URL|$URL|g" /root/.xinitrc
 
 /usr/bin/startx
