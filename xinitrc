@@ -30,7 +30,10 @@ while true; do
 	# Start the window manager (remove "-use_cursor no" if you actually want mouse interaction)
 	matchbox-window-manager -use_titlebar no -use_cursor no &
 
+    # chrome data directory
+    [ ! -d /data/chrome ] && mkdir -p /data/chrome
+
 	# Start the browser (See http://peter.sh/experiments/chromium-command-line-switches/)
-	chromium  --app=https://teamomg.geckoboard.com/dashboards/C5C62FF06F407A8A
+	chromium  --app=https://teamomg.geckoboard.com/dashboards/C5C62FF06F407A8A --user-data-dir /data/chrome
 
 done;
