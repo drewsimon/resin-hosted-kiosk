@@ -20,13 +20,16 @@ overscan_bottom=-160
 # overscan.
 framebuffer_width=1980
 framebuffer_height=1080
+framebuffer_depth=32
+framebuffer_ignore_alpha=1
 
 # uncomment if hdmi display is not detected and composite is being output
 #hdmi_force_hotplug=1
 
 # uncomment to force a specific HDMI mode (this will force VGA)
-#hdmi_group=1
+hdmi_group=2
 #hdmi_mode=1
+hdmi_pixel_encoding=1
 
 # uncomment to force a HDMI mode rather than DVI. This can make audio work in
 # DMT (computer monitor) modes
