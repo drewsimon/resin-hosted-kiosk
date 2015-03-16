@@ -11,8 +11,8 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 COPY ./config.txt /boot/config.txt
-COPY ./xinitrc /home/pi/.xinitrc
+COPY ./xinitrc /root/.xinitrc
 COPY ./rc.local /etc/rc.local
-COPY ./startx.sh /home/pi/startx.sh
+COPY ./startx.sh /root/startx.sh
 
-ENTRYPOINT /home/pi/startx.sh
+ENTRYPOINT /root/startx.sh
