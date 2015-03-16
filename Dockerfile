@@ -13,7 +13,6 @@ RUN apt-get update && apt-get install -y \
 
 COPY ./config.txt /boot/config.txt
 COPY ./xinitrc /root/.xinitrc
-COPY ./rc.local /etc/rc.local
 COPY ./startx.sh /root/startx.sh
 
 ENTRYPOINT /root/startx.sh
