@@ -6,9 +6,10 @@ ldconfig
 
 echo `whoami`
 echo $RESIN_DEVICE_UUID
-URL_VAR="RESIN_$RESIN_DEVICE_UUID"
-echo "VAR:" + $URL_VAR
+URL_VAR=RESIN_${RESIN_DEVICE_UUID}
+echo $URL_VAR
 DEFAULT_URL="NO URL FOUND"
-echo "URL:" + $(echo $URL_VAR)
+eval URL=\$$URL_VAR
+echo $URL
 
-/usr/bin/startx
+#/usr/bin/startx
