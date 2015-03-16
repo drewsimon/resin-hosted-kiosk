@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     xwit \
     sqlite3 \
     libnss3 \
+    xinit \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 COPY ./config.txt /boot/config.txt
