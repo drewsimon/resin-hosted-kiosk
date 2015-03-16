@@ -4,13 +4,9 @@ echo 'HERE WE GO!'
 
 ldconfig
 
-printenv
 echo `whoami`
-echo $RESIN_DEVICE_UUID
-URL_VAR=RESIN_${RESIN_DEVICE_UUID}
-echo $URL_VAR
 DEFAULT_URL="NO URL FOUND"
-eval URL=\$$URL_VAR
+eval URL=\$$RESIN_DEVICE_UUID
 echo $URL
 
 #/usr/bin/startx
