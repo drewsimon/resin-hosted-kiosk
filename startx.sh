@@ -8,4 +8,4 @@ echo `whoami`
 echo `ls /home`
 echo `ls /home/root`
 
-startx &
+/usr/bin/startx &
