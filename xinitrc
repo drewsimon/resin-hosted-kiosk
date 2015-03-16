@@ -34,6 +34,6 @@ while true; do
     [ ! -d /data/chrome ] && mkdir -p /data/chrome
 
 	# Start the browser (See http://peter.sh/experiments/chromium-command-line-switches/)
-	chromium  --app=https://teamomg.geckoboard.com/dashboards/C5C62FF06F407A8A --user-data-dir /data/chrome
+	chromium  --app=https://teamomg.geckoboard.com/loop/F74A13D1272AECD9 --user-data-dir /data/chrome
 
 done;
