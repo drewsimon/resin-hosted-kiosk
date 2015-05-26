@@ -31,6 +31,7 @@ while true; do
 	matchbox-window-manager -use_titlebar no -use_cursor no &
 
     # chrome data directory
+    rm -rf /data/chrome
     [ ! -d /data/chrome ] && mkdir -p /data/chrome
 
 	# Start the browser (See http://peter.sh/experiments/chromium-command-line-switches/)
