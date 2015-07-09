@@ -181,7 +181,7 @@
 ##     3        YCbCr limited (16-235)
 ##     4        YCbCr limited ( 0-255)
 ##
-hdmi_pixel_encoding=1
+#hdmi_pixel_encoding=1
 
 ## hdmi_group
 ##     Defines the HDMI type
@@ -192,7 +192,7 @@ hdmi_pixel_encoding=1
 ##     1        CEA
 ##     2        DMT
 ##
-hdmi_group=2
+#hdmi_group=1
 
 ## hdmi_mode
 ##     defines screen resolution in CEA or DMT format
@@ -366,7 +366,7 @@ hdmi_group=2
 ##     0        Overscan Enabled (Default)
 ##     1        Overscan Disabled
 ##
-disable_overscan=1
+#disable_overscan=1
 
 ################################################################################
 ##  Framebuffer Video Settings
@@ -395,7 +395,7 @@ framebuffer_height=1080
 ##     32       Has no corruption issues but needs framebuffer_ignore_alpha=1
 ##              and shows the wrong colors as of 2012/06/15
 ##
-framebuffer_depth=32
+#framebuffer_depth=16
 
 ## framebuffer_ignore_alpha
 ##     Set to 1 to disable alpha channel. Helps with 32bit.
@@ -405,7 +405,7 @@ framebuffer_depth=32
 ##     0        Enable Alpha Channel (Default)
 ##     1        Disable Alpha Channel
 ##
-framebuffer_ignore_alpha=1
+#framebuffer_ignore_alpha=0
 
 ################################################################################
 ##  General Video Settings
