@@ -10,4 +10,6 @@ echo $URL
 
 sed -i "s|APP_URL|$URL|g" /root/.xinitrc
 
+touch /root/.Xauthority
+
 /usr/bin/startx
