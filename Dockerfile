@@ -15,6 +15,7 @@ RUN apt-get -q update && apt-get -qy install \
     libgnome-keyring0 \
     libxss1 \
     xdg-utils \
+    lsb-release \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
