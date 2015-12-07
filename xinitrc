@@ -35,6 +35,6 @@ while true; do
     [ ! -d /data/chrome ] && mkdir -p /data/chrome
 
 	# Start the browser (See http://peter.sh/experiments/chromium-command-line-switches/)
-	chromium-browser  --app=APP_URL --user-data-dir /data/chrome
+	chromium-browser  --app=APP_URL --no-sandbox --user-data-dir /data/chrome
 
 done;
