@@ -2,7 +2,7 @@
 while true; do
 
 	# Clean up previously running apps, gracefully at first then harshly
-	killall -TERM chromium 2>/dev/null;
+	killall -TERM chromium-browser 2>/dev/null;
 	killall -TERM matchbox-window-manager 2>/dev/null;
 	sleep 2;
 	killall -9 chromium 2>/dev/null;
@@ -35,6 +35,6 @@ while true; do
     [ ! -d /data/chrome ] && mkdir -p /data/chrome
 
 	# Start the browser (See http://peter.sh/experiments/chromium-command-line-switches/)
-	chromium  --app=APP_URL --user-data-dir /data/chrome
+	chromium-browser  --app=APP_URL --user-data-dir /data/chrome
 
 done;
