@@ -15,7 +15,7 @@ echo '__________'
 cat /etc/hostname
 echo "HOST BEFORE"
 cat /etc/hosts
-echo '127.0.0.1 raspberrypi2' > /etc/hosts
+echo '127.0.0.1 raspberrypi2' >> /etc/hosts
 echo "HOST AFTER"
 cat /etc/hosts
 echo '__________'
