@@ -11,7 +11,14 @@ sed -i "s|APP_URL|$URL|g" /root/.xinitrc
 
 touch /root/.Xauthority
 
+echo '__________'
 cat /etc/hostname
+echo "HOST BEFORE"
 cat /etc/hosts
+echo '127.0.0.1 raspberrypi2'
+echo "HOST AFTER"
+cat /etc/hosts
+echo '__________'
+
 
 /usr/bin/startx
