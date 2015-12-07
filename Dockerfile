@@ -9,6 +9,12 @@ RUN apt-get -q update && apt-get -qy install \
     sqlite3 \
     libnss3 \
     xinit \
+    gconf-service \
+    libasound2 \
+    libgconf-2-4 \
+    libgnome-keyring0 \
+    libxss1 \
+    xdg-utils \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
