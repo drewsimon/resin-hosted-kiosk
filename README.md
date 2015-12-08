@@ -1,6 +1,7 @@
 #A kiosk app running on top of [Resin.io](https://resin.io)
 
-Based on http://blogs.wcode.org/2013/09/howto-boot-your-raspberry-pi-into-a-fullscreen-browser-kiosk/
+Mostly based on https://github.com/shaunmulligan/resin-epiphany-kiosk
+Previously Based on http://blogs.wcode.org/2013/09/howto-boot-your-raspberry-pi-into-a-fullscreen-browser-kiosk/
 Loosely based on https://bitbucket.org/lifeeth/resin-kiosk.git
 
 ##Installing 
