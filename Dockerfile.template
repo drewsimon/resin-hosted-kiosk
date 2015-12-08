@@ -14,13 +14,13 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN apt-get update && apt-get install -y \
-    && gconf-service \
-    && libasound2 \
-    && libgconf-2-4 \
-    && libgnome-keyring0 \
-    && libxss1 \
-    && xdg-utils \
-    && apt-get clean && rm -rf /var/lib/apt/lists/*
+    gconf-service \
+    libasound2 \
+    libgconf-2-4 \
+    libgnome-keyring0 \
+    libxss1 \
+    xdg-utils \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN wget https://dl.dropboxusercontent.com/u/87113035/chromium-browser-l10n_45.0.2454.85-0ubuntu0.15.04.1.1181_all.deb \
     && wget https://dl.dropboxusercontent.com/u/87113035/chromium-browser_45.0.2454.85-0ubuntu0.15.04.1.1181_armhf.deb \
