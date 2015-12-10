@@ -11,4 +11,4 @@ gpasswd -a pi video
 
 echo "allowed_users=anybody" > /etc/X11/Xwrapper.config
 
-xinit /usr/src/app/launchBrowser.sh
+xinit /usr/src/app/launchBrowser.sh -nocursor
