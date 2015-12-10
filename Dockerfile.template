@@ -28,6 +28,10 @@ RUN wget https://dl.dropboxusercontent.com/u/87113035/chromium-browser-l10n_45.0
     && sudo dpkg -i chromium-codecs-ffmpeg-extra_45.0.2454.85-0ubuntu0.15.04.1.1181_armhf.deb \
     && sudo dpkg -i chromium-browser-l10n_45.0.2454.85-0ubuntu0.15.04.1.1181_all.deb chromium-browser_45.0.2454.85-0ubuntu0.15.04.1.1181_armhf.deb
 
+RUN apt-get update && apt-get install -y \
+    unclutter \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
 ENV INITSYSTEM on
 COPY start.sh start.sh
 COPY src/ /usr/src/app
