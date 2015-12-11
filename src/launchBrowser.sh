@@ -5,6 +5,7 @@
  xset s off
  xset s noblank
 
+rm -rf /root/.config
 mkdir -p /root/.config
 url=$URL
 default='https://www.ordermygear.com'
