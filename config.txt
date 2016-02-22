@@ -366,7 +366,7 @@
 ##     0        Overscan Enabled (Default)
 ##     1        Overscan Disabled
 ##
-#disable_overscan=1
+disable_overscan=1
 
 ################################################################################
 ##  Framebuffer Video Settings
@@ -496,7 +496,7 @@ framebuffer_height=1080
 ##
 ##     Default 64
 ##
-gpu_mem=16
+#gpu_mem=64
 
 ## gpu_mem_256
 ##     GPU memory allocation in MB for 256MB board revision.
@@ -509,6 +509,8 @@ gpu_mem=16
 ##     This option overrides gpu_mem.
 ##
 #gpu_mem_512=128
+
+gpu_mem_1024=512
 
 ## disable_pvt
 ##     Disable adjusting the refresh rate of RAM every 500ms
@@ -726,7 +728,7 @@ gpu_mem=16
 ##
 ##     Default 700.
 ##
-#arm_freq=700
+arm_freq=900
 
 ## arm_freq_min
 ##     Minimum frequency of ARM in MHz (used for dynamic clocking).
@@ -740,7 +742,7 @@ gpu_mem=16
 ##
 ##     Default 250.
 ##
-#gpu_freq=250
+gpu_freq=333
 
 ## core_freq
 ##     Frequency of GPU processor core in MHz. It has an impact on ARM
@@ -784,7 +786,7 @@ gpu_mem=16
 ##
 ##     Default 400.
 ##
-#sdram_freq=400
+sdram_freq=450
 
 ## sdram_freq_min
 ##     Minimum frequency of SDRAM in MHz (used for dynamic clocking).
@@ -849,7 +851,7 @@ gpu_mem=16
 ##     7        1.375 V (requires force_turbo=1 or current_limit_override)
 ##     8        1.4   V (requires force_turbo=1 or current_limit_override)
 ##
-#over_voltage=0
+over_voltage=2
 
 ## over_voltage_min
 ##     Minimum ARM/GPU core voltage adjust (used for dynamic clocking).
@@ -1018,4 +1020,3 @@ gpu_mem=16
 #over_voltage_sdram_p=0
 dtparam=i2c_arm=on
 dtparam=spi=on
-device_tree_overlay=w1-gpio-pullup-overlay.dtb
